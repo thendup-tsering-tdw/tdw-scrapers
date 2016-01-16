@@ -11,7 +11,7 @@ Morinville:
   Step 2: Convert all pdf files to txt files
     Go to the get directory and run the following
       a) 'for file in *.pdf; do pdftotext "$file" "$file.txt"; done'
-      b) 'mv *.txt ../../parse/morinville'
+      b) 'mv *.txt ../parse'
 
   Step 3: Parse the data
     Usage ruby parse.rb #{shardIdx} #{shardSize} > #{outFileName}.csv
