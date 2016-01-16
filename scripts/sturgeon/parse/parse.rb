@@ -12,7 +12,7 @@ CSV($stdout, headers: headers, write_headers: true) do |out|
     idx = i.to_s.rjust(9, '0')
     filename = "#{idx}.pdf.txt"
     if File.exist?(filename)
-    # filename = "321081830.pdf.txt"
+      # filename = "176003606.pdf.txt"
       textBlob =File.open(filename).read
       textBlob.gsub!(/\r\n?/, "\n")
       out << CSV::Row.new(headers, []).tap do |row|
@@ -21,7 +21,7 @@ CSV($stdout, headers: headers, write_headers: true) do |out|
         row['address'] = textBlob.match(/Address: (.*)\n/)[1] unless textBlob.match(/Address: (.*)\n/) == nil
         row['land_area'] = textBlob.match(/Land Area: (\d*\.?\d*)/)[1] unless textBlob.match(/Land Area: (\d*\.?\d*)/) == nil
         row['land_area_unit'] = 'Acres'
-        row['subdivision'] = 'Town of Morinville'
+        row['subdivision'] = 'Sturgeon County'
         row['zoning'] = textBlob.match(/Zoning: (.*)/)[1] unless textBlob.match(/Zoning: (.*)/) == nil
         row['market_land_site_area'] = textBlob.match(/Site Area: (\d*\.?\d*)/)[1] unless textBlob.match(/Site Area: (\d*\.?\d*)/) == nil
         row['market_land_site_area_unit'] = 'Acres'
