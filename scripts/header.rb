@@ -15,7 +15,6 @@ API_KEY = 'AIzaSyD0kGtJ5C0sgtRF312cBSg0mVjIfd2yE4o'
 ############################################################
 # Geocode Address
 def get_response(query)
-  query = query + 'Sturgeon Canada'
   encoded_query = CGI.escape(query)
   response = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=#{encoded_query}&key=#{API_KEY}").read)
   result = response['results'][0]

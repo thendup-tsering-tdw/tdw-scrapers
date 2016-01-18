@@ -28,7 +28,8 @@ CSV($stdout, headers: headers, write_headers: true) do |out|
         row['year_of_assessment'] = '2014'
         # row['assessment_value'] =
         unless row['address'] == nil
-          response = get_response(row['address'])
+          query = row['address'] + 'Morinville, Canada'
+          response = get_response(query)
           sleep 0.3
           row['street_number'] = response[:street_number]
           row['route'] = response[:route]
