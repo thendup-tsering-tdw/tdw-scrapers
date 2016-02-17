@@ -1,6 +1,12 @@
 require '../../header.rb'
 
-headers = ['roll','legal','address','land_area','land_area_unit','subdivision','zoning','market_land_site_area','market_land_site_area_unit','year_of_assessment','assessment_value','street_number','route','locality','administrative_area_level_1','administrative_area_level_2','country','postal_code','latitude','longitude']
+lincData = {}
+Dir.glob("#{$pulledDir}/morinville/lincData.json") do |jsonFile|
+  jsonBlob = File.open(jsonFile).read
+  lincData = JSON.parse(jsonBlob)
+end
+
+headers = ['roll','legal','address','land_area','land_area_unit','subdivision','zoning','linc_number','market_land_site_area','market_land_site_area_unit','year_of_assessment','assessment_value','street_number','route','locality','administrative_area_level_1','administrative_area_level_2','country','postal_code','latitude','longitude']
 
 CSV($stdout, headers: headers, write_headers: true) do |out|
   Dir.glob("#{$pulledDir}/morinville/*.txt") do |txtFile|
@@ -16,13 +22,13 @@ CSV($stdout, headers: headers, write_headers: true) do |out|
       row['land_area_unit'] = 'Acres'
       row['subdivision'] = 'Town of Morinville'
       row['zoning'] = textBlob.match(/Zoning: (.*)/)[1] unless textBlob.match(/Zoning: (.*)/) == nil
+      row['linc_number'] = lincData[row['roll']]
       row['market_land_site_area'] = textBlob.match(/Site Area: (\d*\.?\d*)/)[1] unless textBlob.match(/Site Area: (\d*\.?\d*)/) == nil
       row['market_land_site_area_unit'] = 'Acres'
       row['year_of_assessment'] = '2014'
       row['assessment_value'] = assessmentVal
       unless row['address'] == nil
         query = row['address'] + ' Morinville, Canada'
-        STDERR.puts "Coding: #{query}"
         response = get_response(query)
         sleep 0.3
         if response == nil

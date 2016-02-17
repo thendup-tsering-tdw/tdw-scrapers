@@ -25,7 +25,7 @@ Dir.glob("#{$pulledDir}/spruce/land*.html") do |landFile|
   html = Nokogiri::HTML(htmlBlob)
   once = true
   html.xpath('//div[@class="record-slider"]/table').each do |record|
-    lincNO = record.xpath('@id').text().match(/.*_(.*)/)[1]
+    pid = record.xpath('@id').text().match(/.*_(.*)/)[1]
     landUse = []
     landCode = ''
     landDesc = ''
@@ -39,12 +39,12 @@ Dir.glob("#{$pulledDir}/spruce/land*.html") do |landFile|
       end
     end
     landUse = [landCode,landDesc]
-    landUseData[lincNO] = landUse
+    landUseData[pid] = landUse
   end
 end
 
 
-headers = ['Address','PID','Property LINC','Roll Number','Tax Year','Assessment Value','Description','Legal Description','Land Use District Code','Land Use Description','subdivision','street_number','route','locality','administrative_area_level_1','administrative_area_level_2','country','postal_code','latitude','longitude']
+headers = ['address','pid','property_linc','roll_number','tax_year','assessment_value','description','legal_description','land_use_district_code','land_use_description','subdivision','street_number','route','locality','administrative_area_level_1','administrative_area_level_2','country','postal_code','latitude','longitude']
 
 CSV($stdout, headers: headers, write_headers: true) do |out|
   Dir.glob("#{$pulledDir}/spruce/asmt*.html") do |asmtFile|
@@ -54,16 +54,19 @@ CSV($stdout, headers: headers, write_headers: true) do |out|
       out << CSV::Row.new(headers, []).tap do |row|
         record.xpath('tr').each do |col|
           prop = col.xpath('td')
-          colName = prop[0].xpath('a').text()
+          colName = prop[0].xpath('a').text().underscore
           colValue = prop[2].text()
           row[colName] = colValue
         end
         row['subdivision'] = 'Spruce Grove'
-        row['Legal Description'] = parcelData[row['Roll Number']]
-        row['Land Use District Code'] = landUseData[row['Property LINC'][0]]
-        row['Land Use Description'] = landUseData[row['Property LINC'][1]]
-        unless row['Address'] == nil
-          query = row['Address'] + ' Spruce Grove, Canada'
+        row['legal_description'] = parcelData[row['roll_number']]
+        if landUseData[row['pid']] != nil
+          row['land_use_district_code'] = landUseData[row['pid']][0]
+          row['land_use_description'] = landUseData[row['pid']][1]
+        end
+        unless row['address'] == nil
+          query = row['address'] + ' Spruce Grove, Canada'
+          STDERR.puts "Gecoding: #{query}"
           response = get_response(query)
           sleep 0.3
           if response == nil

@@ -32,12 +32,12 @@ Spruce:
   Step 4: Parse the data
     Usage 'ruby parse.rb > ../../../2parsed/spruce/#{outFileName}.csv'
 
-    -This step will first reference the land files in the 'get' directory. The script will
-    create a hash of all the records in the files within this directory having the 'Property LINC'
+    -This step will first reference the land files in the 'pulled' directory. The script will
+    create a hash of all the records in the files within this directory having the 'PID'
     number as a reference.
-    -Then the script will reference the prcl files in the 'get' directory will create another
+    -Then the script will reference the prcl files in the 'pulled' directory will create another
     hash of the Parcel data which would contain the record and its respective Legal Description
     also having the 'Roll' number as a reference
-    -Finally the script will reference all the asmt files in the 'get' directory and will
+    -Finally the script will reference all the asmt files in the 'pulled' directory and will
     merge all the data in with the data from the first two hashes by linking them using the
     Roll and LINC numbers.
