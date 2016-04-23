@@ -1,4 +1,4 @@
-require '../headerFiles/header.rb'
+require '../../headerFiles/header.rb'
 
 shardIdx = ARGV[1].to_i
 shardSize = ARGV[2].to_i
