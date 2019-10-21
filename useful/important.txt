@@ -1,0 +1,5 @@
+ckan link:
+  http://ckan.namara.io/api/3/action/package_show?id=<dataset_link>
+
+Convert csv file to open with accented characters:
+  iconv -f UTF-8 -t WINDOWS-1252 [file_name] > [output_file_name]

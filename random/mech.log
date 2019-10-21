@@ -1,0 +1,825 @@
+# Logfile created on 2016-07-12 15:14:47 -0400 by logger.rb/44203
+I, [2016-07-12T15:14:47.313206 #8203]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:14:47.313294 #8203] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:14:47.313316 #8203] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:14:47.313334 #8203] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:14:47.313355 #8203] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:14:47.313382 #8203] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:14:47.313447 #8203] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:14:49.181617 #8203]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:14:49.181680 #8203] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:14:49.181699 #8203] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:14:49.181715 #8203] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:14:49.181731 #8203] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:48 GMT
+D, [2016-07-12T15:14:49.181745 #8203] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:14:49.181760 #8203] DEBUG -- : response-header: set-cookie => JSESSIONID=9D57A3066F474D8138A43FDD34076366; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F8098419B45C106EF05C968E7FA56D55C29378020BAA0609A86C40B888B28DD6135E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:14:49.181775 #8203] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:14:49.181789 #8203] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:14:49.181823 #8203] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:14:49.181838 #8203] DEBUG -- : response-header: via => 1.1 0d2cfbcda010df0612b135f7f52f2cc8.cloudfront.net (CloudFront)
+D, [2016-07-12T15:14:49.181854 #8203] DEBUG -- : response-header: x-amz-cf-id => U79OoPatL31ucTGap9gVMqiEb6jSokHg5jclXRvTOy3ZpP69qZL6RQ==
+D, [2016-07-12T15:14:49.181970 #8203] DEBUG -- : Read 5004 bytes (5004 total)
+D, [2016-07-12T15:14:49.428722 #8203] DEBUG -- : Read 3156 bytes (8160 total)
+D, [2016-07-12T15:14:49.428909 #8203] DEBUG -- : gzip response
+D, [2016-07-12T15:14:49.437882 #8203] DEBUG -- : saved cookie: JSESSIONID=9D57A3066F474D8138A43FDD34076366
+D, [2016-07-12T15:14:49.438024 #8203] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F8098419B45C106EF05C968E7FA56D55C29378020BAA0609A86C40B888B28DD6135E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE
+I, [2016-07-12T15:14:49.957087 #8203]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:14:49.957155 #8203] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:14:49.957175 #8203] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:14:49.957192 #8203] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:14:49.957207 #8203] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:14:49.957221 #8203] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:14:49.957236 #8203] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F8098419B45C106EF05C968E7FA56D55C29378020BAA0609A86C40B888B28DD6135E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE; JSESSIONID=9D57A3066F474D8138A43FDD34076366
+D, [2016-07-12T15:14:49.957250 #8203] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:14:49.957289 #8203] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:14:50.147393 #8203]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:14:50.147475 #8203] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:14:50.147504 #8203] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:14:50.147542 #8203] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:14:50.147558 #8203] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:49 GMT
+D, [2016-07-12T15:14:50.147573 #8203] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:14:50.147587 #8203] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:14:50.147601 #8203] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:14:50.147615 #8203] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:14:50.147630 #8203] DEBUG -- : response-header: via => 1.1 0d2cfbcda010df0612b135f7f52f2cc8.cloudfront.net (CloudFront)
+D, [2016-07-12T15:14:50.147645 #8203] DEBUG -- : response-header: x-amz-cf-id => x5FcNGmkcDRLDfmA-TvhvAvrAJQELaDy-K4rN63QmnupIBNwgMwTIg==
+D, [2016-07-12T15:14:50.147705 #8203] DEBUG -- : Read 2511 bytes (2511 total)
+D, [2016-07-12T15:14:50.165038 #8203] DEBUG -- : Read 2866 bytes (5377 total)
+D, [2016-07-12T15:14:50.165175 #8203] DEBUG -- : Read 921 bytes (6298 total)
+D, [2016-07-12T15:14:50.165804 #8203] DEBUG -- : gzip response
+I, [2016-07-12T15:15:01.075452 #8239]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:15:01.075528 #8239] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:15:01.075548 #8239] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:15:01.075564 #8239] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:15:01.075581 #8239] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:15:01.075596 #8239] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:15:01.075609 #8239] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:15:01.317534 #8239]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:15:01.317600 #8239] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:15:01.317622 #8239] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:15:01.317639 #8239] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:15:01.317655 #8239] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:04 GMT
+D, [2016-07-12T15:15:01.317670 #8239] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:15:01.317732 #8239] DEBUG -- : response-header: set-cookie => JSESSIONID=DA724C23CC99F0522F34EED118A38BE4; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0242C5AA807D088A7B079A66291C29CBD6E194A82646291C9381E16F5D0C731435E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:15:01.317767 #8239] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:15:01.317784 #8239] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:15:01.317799 #8239] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:15:01.317837 #8239] DEBUG -- : response-header: via => 1.1 f8120b4e1c7749b93d62b7e5e7abcf45.cloudfront.net (CloudFront)
+D, [2016-07-12T15:15:01.317853 #8239] DEBUG -- : response-header: x-amz-cf-id => H52nZsQndGCjSGM0jQPkZmG69fB3omrbK4jUSCM2Z-MzS-qlz41BnQ==
+D, [2016-07-12T15:15:01.317969 #8239] DEBUG -- : Read 767 bytes (767 total)
+D, [2016-07-12T15:15:01.318022 #8239] DEBUG -- : Read 1838 bytes (2605 total)
+D, [2016-07-12T15:15:01.318060 #8239] DEBUG -- : Read 546 bytes (3151 total)
+D, [2016-07-12T15:15:01.318107 #8239] DEBUG -- : Read 410 bytes (3561 total)
+D, [2016-07-12T15:15:01.318147 #8239] DEBUG -- : Read 8 bytes (3569 total)
+D, [2016-07-12T15:15:01.318205 #8239] DEBUG -- : Read 420 bytes (3989 total)
+D, [2016-07-12T15:15:01.320795 #8239] DEBUG -- : Read 724 bytes (4713 total)
+D, [2016-07-12T15:15:01.414399 #8239] DEBUG -- : Read 3574 bytes (8287 total)
+D, [2016-07-12T15:15:01.414686 #8239] DEBUG -- : gzip response
+D, [2016-07-12T15:15:01.422429 #8239] DEBUG -- : saved cookie: JSESSIONID=DA724C23CC99F0522F34EED118A38BE4
+D, [2016-07-12T15:15:01.422582 #8239] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0242C5AA807D088A7B079A66291C29CBD6E194A82646291C9381E16F5D0C731435E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3
+I, [2016-07-12T15:15:01.938897 #8239]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:15:01.938962 #8239] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:15:01.938981 #8239] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:15:01.938997 #8239] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:15:01.939011 #8239] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:15:01.939025 #8239] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:15:01.939039 #8239] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0242C5AA807D088A7B079A66291C29CBD6E194A82646291C9381E16F5D0C731435E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3; JSESSIONID=DA724C23CC99F0522F34EED118A38BE4
+D, [2016-07-12T15:15:01.939053 #8239] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:15:01.939092 #8239] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:15:02.138787 #8239]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:15:02.138861 #8239] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:15:02.138883 #8239] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:15:02.138899 #8239] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:15:02.138914 #8239] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:05 GMT
+D, [2016-07-12T15:15:02.138949 #8239] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:15:02.138962 #8239] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:15:02.138976 #8239] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:15:02.139000 #8239] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:15:02.139015 #8239] DEBUG -- : response-header: via => 1.1 f8120b4e1c7749b93d62b7e5e7abcf45.cloudfront.net (CloudFront)
+D, [2016-07-12T15:15:02.139029 #8239] DEBUG -- : response-header: x-amz-cf-id => 1TKDfvJi72AGFFGBsMJw5QN1rtz4C35qzioBxtV2keHp3wJiGNTVag==
+D, [2016-07-12T15:15:02.139134 #8239] DEBUG -- : Read 2511 bytes (2511 total)
+D, [2016-07-12T15:15:02.139226 #8239] DEBUG -- : Read 1761 bytes (4272 total)
+D, [2016-07-12T15:15:02.139266 #8239] DEBUG -- : Read 1979 bytes (6251 total)
+D, [2016-07-12T15:15:02.139378 #8239] DEBUG -- : gzip response
+I, [2016-07-12T15:15:30.910169 #8260]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:15:30.910246 #8260] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:15:30.910266 #8260] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:15:30.910281 #8260] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:15:30.910296 #8260] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:15:30.910309 #8260] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:15:30.910321 #8260] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:15:31.128564 #8260]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:15:31.128661 #8260] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:15:31.128693 #8260] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:15:31.128722 #8260] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:15:31.128739 #8260] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:34 GMT
+D, [2016-07-12T15:15:31.128755 #8260] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:15:31.128770 #8260] DEBUG -- : response-header: set-cookie => JSESSIONID=F575992DE429287AF212944B09EF29E3; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FDFBFB75F7EE5018D5CBB56E8195E3E347134E7F1DDCBDFD5B8E8056C4E6BD8C535E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:15:31.128785 #8260] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:15:31.128799 #8260] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:15:31.128813 #8260] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:15:31.128851 #8260] DEBUG -- : response-header: via => 1.1 42ea0e2305991c9712b9c0ba4ef99d94.cloudfront.net (CloudFront)
+D, [2016-07-12T15:15:31.128867 #8260] DEBUG -- : response-header: x-amz-cf-id => 3l2eDbfFlwZFCji-yBh1ORN70AbyocyOj9sQ1Ww6jrMKyTFAaRBzEw==
+D, [2016-07-12T15:15:31.128979 #8260] DEBUG -- : Read 2634 bytes (2634 total)
+D, [2016-07-12T15:15:31.129034 #8260] DEBUG -- : Read 539 bytes (3173 total)
+D, [2016-07-12T15:15:31.129093 #8260] DEBUG -- : Read 410 bytes (3583 total)
+D, [2016-07-12T15:15:31.129132 #8260] DEBUG -- : Read 420 bytes (4003 total)
+D, [2016-07-12T15:15:31.129169 #8260] DEBUG -- : Read 346 bytes (4349 total)
+D, [2016-07-12T15:15:31.130373 #8260] DEBUG -- : Read 378 bytes (4727 total)
+D, [2016-07-12T15:15:31.130464 #8260] DEBUG -- : Read 388 bytes (5115 total)
+D, [2016-07-12T15:15:31.224268 #8260] DEBUG -- : Read 3216 bytes (8331 total)
+D, [2016-07-12T15:15:31.224442 #8260] DEBUG -- : gzip response
+D, [2016-07-12T15:15:31.231100 #8260] DEBUG -- : saved cookie: JSESSIONID=F575992DE429287AF212944B09EF29E3
+D, [2016-07-12T15:15:31.231237 #8260] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FDFBFB75F7EE5018D5CBB56E8195E3E347134E7F1DDCBDFD5B8E8056C4E6BD8C535E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3
+I, [2016-07-12T15:15:31.744244 #8260]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:15:31.744301 #8260] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:15:31.744320 #8260] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:15:31.744336 #8260] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:15:31.744351 #8260] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:15:31.744365 #8260] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:15:31.744379 #8260] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FDFBFB75F7EE5018D5CBB56E8195E3E347134E7F1DDCBDFD5B8E8056C4E6BD8C535E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3; JSESSIONID=F575992DE429287AF212944B09EF29E3
+D, [2016-07-12T15:15:31.744393 #8260] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:15:31.744435 #8260] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:15:31.938406 #8260]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:15:31.938474 #8260] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:15:31.938502 #8260] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:15:31.938520 #8260] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:15:31.938537 #8260] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:14:35 GMT
+D, [2016-07-12T15:15:31.938552 #8260] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:15:31.938592 #8260] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:15:31.938618 #8260] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:15:31.938634 #8260] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:15:31.938648 #8260] DEBUG -- : response-header: via => 1.1 42ea0e2305991c9712b9c0ba4ef99d94.cloudfront.net (CloudFront)
+D, [2016-07-12T15:15:31.938664 #8260] DEBUG -- : response-header: x-amz-cf-id => gDGt-R6fRm0faFtDuORyfDSkwz3xpG7rGRSvV_eUDes2pBw-SECZxA==
+D, [2016-07-12T15:15:31.938725 #8260] DEBUG -- : Read 2472 bytes (2472 total)
+D, [2016-07-12T15:15:31.939817 #8260] DEBUG -- : Read 2905 bytes (5377 total)
+D, [2016-07-12T15:15:31.939904 #8260] DEBUG -- : Read 921 bytes (6298 total)
+D, [2016-07-12T15:15:31.940108 #8260] DEBUG -- : gzip response
+I, [2016-07-12T15:17:07.162523 #8281]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:17:07.162598 #8281] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:17:07.162619 #8281] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:17:07.162634 #8281] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:17:07.162649 #8281] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:17:07.162663 #8281] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:17:07.162676 #8281] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:17:07.476534 #8281]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:17:07.476598 #8281] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:17:07.476619 #8281] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:17:07.476636 #8281] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:17:07.476652 #8281] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:17:06 GMT
+D, [2016-07-12T15:17:07.476668 #8281] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:17:07.476688 #8281] DEBUG -- : response-header: set-cookie => JSESSIONID=90455668FD1C88976A3C4B135A336596; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516317299E5AE0767D4883C4D30EB1FE2E47B4DC369938751DFF9717843BC4A58A9F8E0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:17:07.476704 #8281] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:17:07.476719 #8281] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:17:07.476734 #8281] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:17:07.476771 #8281] DEBUG -- : response-header: via => 1.1 eedf296fa643251dbe1523139b51f6af.cloudfront.net (CloudFront)
+D, [2016-07-12T15:17:07.476787 #8281] DEBUG -- : response-header: x-amz-cf-id => 9S6w4fC3vr-BPv_lhLFBKLJBBmTHxwQN9CKJ8tSudkcs6veNNuX4bQ==
+D, [2016-07-12T15:17:07.476902 #8281] DEBUG -- : Read 5045 bytes (5045 total)
+D, [2016-07-12T15:17:07.478243 #8281] DEBUG -- : Read 2555 bytes (7600 total)
+D, [2016-07-12T15:17:07.568754 #8281] DEBUG -- : Read 644 bytes (8244 total)
+D, [2016-07-12T15:17:07.568969 #8281] DEBUG -- : gzip response
+D, [2016-07-12T15:17:07.575437 #8281] DEBUG -- : saved cookie: JSESSIONID=90455668FD1C88976A3C4B135A336596
+D, [2016-07-12T15:17:07.575582 #8281] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516317299E5AE0767D4883C4D30EB1FE2E47B4DC369938751DFF9717843BC4A58A9F8E0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD
+I, [2016-07-12T15:17:08.088751 #8281]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:17:08.088807 #8281] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:17:08.088827 #8281] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:17:08.088842 #8281] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:17:08.088869 #8281] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:17:08.088885 #8281] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:17:08.088918 #8281] DEBUG -- : request-header: cookie => AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516317299E5AE0767D4883C4D30EB1FE2E47B4DC369938751DFF9717843BC4A58A9F8E0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD; JSESSIONID=90455668FD1C88976A3C4B135A336596
+D, [2016-07-12T15:17:08.088932 #8281] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:17:08.088950 #8281] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:17:08.261281 #8281]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:17:08.261349 #8281] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:17:08.261401 #8281] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:17:08.261429 #8281] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:17:08.261456 #8281] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:17:07 GMT
+D, [2016-07-12T15:17:08.261499 #8281] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:17:08.261515 #8281] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:17:08.261529 #8281] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:17:08.261543 #8281] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:17:08.261559 #8281] DEBUG -- : response-header: via => 1.1 eedf296fa643251dbe1523139b51f6af.cloudfront.net (CloudFront)
+D, [2016-07-12T15:17:08.261573 #8281] DEBUG -- : response-header: x-amz-cf-id => SxcfMjP4EFTDa5E8ebIlX-mybYTMoxk4xUYwhRBWcr2QTySGP3Xo5Q==
+D, [2016-07-12T15:17:08.261644 #8281] DEBUG -- : Read 2472 bytes (2472 total)
+D, [2016-07-12T15:17:08.261755 #8281] DEBUG -- : Read 1828 bytes (4300 total)
+D, [2016-07-12T15:17:08.261901 #8281] DEBUG -- : Read 1978 bytes (6278 total)
+D, [2016-07-12T15:17:08.262040 #8281] DEBUG -- : gzip response
+I, [2016-07-12T15:17:34.141561 #8304]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:17:34.141636 #8304] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:17:34.141657 #8304] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:17:34.141673 #8304] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:17:34.141687 #8304] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:17:34.141703 #8304] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:17:34.141717 #8304] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:17:34.365827 #8304]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:17:34.365898 #8304] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:17:34.365920 #8304] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:17:34.365938 #8304] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:17:34.365954 #8304] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:17:34 GMT
+D, [2016-07-12T15:17:34.365969 #8304] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:17:34.365986 #8304] DEBUG -- : response-header: set-cookie => JSESSIONID=AB72BA5CA54E3BAF91D1EEEAA8211987; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516318940EC4FC618A361670963631834AB33407773840B7D38494616B2DA66A7900E5FE3FA16AF07660375C5433E5856EB231E7FAADE006A695B944F54E013AD48F8;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:17:34.366001 #8304] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:17:34.366015 #8304] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:17:34.366030 #8304] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:17:34.366081 #8304] DEBUG -- : response-header: via => 1.1 835f55a08848900b948349b16ba58d9f.cloudfront.net (CloudFront)
+D, [2016-07-12T15:17:34.366098 #8304] DEBUG -- : response-header: x-amz-cf-id => J2VaPcWlB3XCPh1Evh1oxSmwXIE_tK5ODOPh8TBj4rISk9kbAyrQkw==
+D, [2016-07-12T15:17:34.366244 #8304] DEBUG -- : Read 2354 bytes (2354 total)
+D, [2016-07-12T15:17:34.366297 #8304] DEBUG -- : Read 792 bytes (3146 total)
+D, [2016-07-12T15:17:34.366337 #8304] DEBUG -- : Read 788 bytes (3934 total)
+D, [2016-07-12T15:17:34.366372 #8304] DEBUG -- : Read 692 bytes (4626 total)
+D, [2016-07-12T15:17:34.366415 #8304] DEBUG -- : Read 1441 bytes (6067 total)
+D, [2016-07-12T15:17:34.443010 #8304] DEBUG -- : Read 2124 bytes (8191 total)
+D, [2016-07-12T15:17:34.443349 #8304] DEBUG -- : gzip response
+D, [2016-07-12T15:17:34.449809 #8304] DEBUG -- : saved cookie: JSESSIONID=AB72BA5CA54E3BAF91D1EEEAA8211987
+D, [2016-07-12T15:17:34.449962 #8304] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516318940EC4FC618A361670963631834AB33407773840B7D38494616B2DA66A7900E5FE3FA16AF07660375C5433E5856EB231E7FAADE006A695B944F54E013AD48F8
+I, [2016-07-12T15:17:34.964573 #8304]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:17:34.964637 #8304] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:17:34.964658 #8304] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:17:34.964675 #8304] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:17:34.964692 #8304] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:17:34.964707 #8304] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:17:34.964723 #8304] DEBUG -- : request-header: cookie => AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516318940EC4FC618A361670963631834AB33407773840B7D38494616B2DA66A7900E5FE3FA16AF07660375C5433E5856EB231E7FAADE006A695B944F54E013AD48F8; JSESSIONID=AB72BA5CA54E3BAF91D1EEEAA8211987
+D, [2016-07-12T15:17:34.964738 #8304] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:17:34.964758 #8304] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:17:35.147212 #8304]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:17:35.147283 #8304] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:17:35.147304 #8304] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:17:35.147321 #8304] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:17:35.147337 #8304] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:17:35 GMT
+D, [2016-07-12T15:17:35.147353 #8304] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:17:35.147368 #8304] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:17:35.147382 #8304] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:17:35.147397 #8304] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:17:35.147411 #8304] DEBUG -- : response-header: via => 1.1 835f55a08848900b948349b16ba58d9f.cloudfront.net (CloudFront)
+D, [2016-07-12T15:17:35.147448 #8304] DEBUG -- : response-header: x-amz-cf-id => uS6_vrFJn23c_FGmbDwDeWgXC87hL6E87iOrTpfPN7UvNfluPy3elQ==
+D, [2016-07-12T15:17:35.147555 #8304] DEBUG -- : Read 3915 bytes (3915 total)
+D, [2016-07-12T15:17:35.147630 #8304] DEBUG -- : Read 385 bytes (4300 total)
+D, [2016-07-12T15:17:35.147737 #8304] DEBUG -- : Read 1978 bytes (6278 total)
+D, [2016-07-12T15:17:35.147851 #8304] DEBUG -- : gzip response
+I, [2016-07-12T15:19:57.190938 #8341]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:19:57.191022 #8341] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:19:57.191042 #8341] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:19:57.191058 #8341] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:19:57.191083 #8341] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:19:57.191098 #8341] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:19:57.191114 #8341] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:19:57.602090 #8341]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:19:57.602196 #8341] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:19:57.602243 #8341] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:19:57.602271 #8341] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:19:57.602331 #8341] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:19:56 GMT
+D, [2016-07-12T15:19:57.602357 #8341] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:19:57.602389 #8341] DEBUG -- : response-header: set-cookie => JSESSIONID=2324FD86562B98A5790C5B7E6720E64A; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516318E8A5A8D1F162121703061144D4D250896459C1126A64B233AF22821AD7DE11EE0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:19:57.602416 #8341] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:19:57.602442 #8341] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:19:57.602467 #8341] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:19:57.602492 #8341] DEBUG -- : response-header: via => 1.1 2b5ab95a64d78c840bf35e209380c3a2.cloudfront.net (CloudFront)
+D, [2016-07-12T15:19:57.602518 #8341] DEBUG -- : response-header: x-amz-cf-id => 1KheBTKUqB3KuZVeNhkf8Rb8PzNcfogw-y5D1eDIQeT7k3xHExkCpw==
+D, [2016-07-12T15:19:57.602716 #8341] DEBUG -- : Read 2634 bytes (2634 total)
+D, [2016-07-12T15:19:57.602823 #8341] DEBUG -- : Read 539 bytes (3173 total)
+D, [2016-07-12T15:19:57.607011 #8341] DEBUG -- : Read 2945 bytes (6118 total)
+D, [2016-07-12T15:19:57.684054 #8341] DEBUG -- : Read 2147 bytes (8265 total)
+D, [2016-07-12T15:19:57.684352 #8341] DEBUG -- : gzip response
+D, [2016-07-12T15:19:57.696406 #8341] DEBUG -- : saved cookie: JSESSIONID=2324FD86562B98A5790C5B7E6720E64A
+D, [2016-07-12T15:19:57.696751 #8341] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516318E8A5A8D1F162121703061144D4D250896459C1126A64B233AF22821AD7DE11EE0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60
+I, [2016-07-12T15:20:18.295518 #8362]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:20:18.295621 #8362] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:20:18.295644 #8362] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:20:18.295662 #8362] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:20:18.295680 #8362] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:20:18.295754 #8362] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:20:18.295798 #8362] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:20:18.503608 #8362]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:20:18.503704 #8362] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:20:18.503739 #8362] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:20:18.503767 #8362] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:20:18.503825 #8362] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:20:18 GMT
+D, [2016-07-12T15:20:18.503851 #8362] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:20:18.503878 #8362] DEBUG -- : response-header: set-cookie => JSESSIONID=D7E6B4539C7DDC87521ECC453DCF798C; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631DA37C80775789B2960B392F0A0CADF1D3F00ADF81321E8752056F93546160B2BE0758FAB5234B813FECE3F4BCA3692741F6DBAC628C5C4BC281858CB9D1D1CAB;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:20:18.503928 #8362] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:20:18.503956 #8362] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:20:18.503981 #8362] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:20:18.504006 #8362] DEBUG -- : response-header: via => 1.1 a6e6de55f7ddbeeba09f3954e960354f.cloudfront.net (CloudFront)
+D, [2016-07-12T15:20:18.504031 #8362] DEBUG -- : response-header: x-amz-cf-id => lDrELpMXmHxHxI1Y_VsEdXWIExIxJXmlaRKfV2dV68vdYC4vGbztxQ==
+D, [2016-07-12T15:20:18.504273 #8362] DEBUG -- : Read 2634 bytes (2634 total)
+D, [2016-07-12T15:20:18.504402 #8362] DEBUG -- : Read 539 bytes (3173 total)
+D, [2016-07-12T15:20:18.504525 #8362] DEBUG -- : Read 788 bytes (3961 total)
+D, [2016-07-12T15:20:18.504604 #8362] DEBUG -- : Read 684 bytes (4645 total)
+D, [2016-07-12T15:20:18.504668 #8362] DEBUG -- : Read 388 bytes (5033 total)
+D, [2016-07-12T15:20:18.504755 #8362] DEBUG -- : Read 1898 bytes (6931 total)
+D, [2016-07-12T15:20:18.583730 #8362] DEBUG -- : Read 1288 bytes (8219 total)
+D, [2016-07-12T15:20:18.584171 #8362] DEBUG -- : gzip response
+D, [2016-07-12T15:20:18.591603 #8362] DEBUG -- : saved cookie: JSESSIONID=D7E6B4539C7DDC87521ECC453DCF798C
+D, [2016-07-12T15:20:18.591746 #8362] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631DA37C80775789B2960B392F0A0CADF1D3F00ADF81321E8752056F93546160B2BE0758FAB5234B813FECE3F4BCA3692741F6DBAC628C5C4BC281858CB9D1D1CAB
+I, [2016-07-12T15:29:39.537810 #8410]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:29:39.537886 #8410] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:29:39.537907 #8410] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:29:39.537926 #8410] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:29:39.537941 #8410] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:29:39.537955 #8410] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:29:39.537969 #8410] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:29:39.743262 #8410]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:29:39.743328 #8410] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:29:39.743350 #8410] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:29:39.743367 #8410] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:29:39.743383 #8410] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:29:39 GMT
+D, [2016-07-12T15:29:39.743399 #8410] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:29:39.743417 #8410] DEBUG -- : response-header: set-cookie => JSESSIONID=0493EE8E2BD1336D8AD8236414BF781C; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0D8E42E9B8DADDF46BEBC441AB50EF94347125772A5E4D43A2372A1E1576F07235E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:29:39.743433 #8410] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:29:39.743448 #8410] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:29:39.743462 #8410] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:29:39.743500 #8410] DEBUG -- : response-header: via => 1.1 7cc12fa294da8ba03ac48c94533c8037.cloudfront.net (CloudFront)
+D, [2016-07-12T15:29:39.743515 #8410] DEBUG -- : response-header: x-amz-cf-id => 8Wxvpy7bNm5Z3OxMMfghn_iYHMvx2pDQEjgA6ozGWHfHp29ztyyB-A==
+D, [2016-07-12T15:29:39.743677 #8410] DEBUG -- : Read 767 bytes (767 total)
+D, [2016-07-12T15:29:39.743740 #8410] DEBUG -- : Read 1838 bytes (2605 total)
+D, [2016-07-12T15:29:39.743808 #8410] DEBUG -- : Read 2093 bytes (4698 total)
+D, [2016-07-12T15:29:39.744565 #8410] DEBUG -- : Read 388 bytes (5086 total)
+D, [2016-07-12T15:29:39.744660 #8410] DEBUG -- : Read 1071 bytes (6157 total)
+D, [2016-07-12T15:29:39.828179 #8410] DEBUG -- : Read 2130 bytes (8287 total)
+D, [2016-07-12T15:29:39.828729 #8410] DEBUG -- : gzip response
+D, [2016-07-12T15:29:39.835396 #8410] DEBUG -- : saved cookie: JSESSIONID=0493EE8E2BD1336D8AD8236414BF781C
+D, [2016-07-12T15:29:39.835554 #8410] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0D8E42E9B8DADDF46BEBC441AB50EF94347125772A5E4D43A2372A1E1576F07235E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE
+I, [2016-07-12T15:29:40.350287 #8410]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:29:40.350346 #8410] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:29:40.350366 #8410] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:29:40.350383 #8410] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:29:40.350399 #8410] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:29:40.350413 #8410] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:29:40.350430 #8410] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F0D8E42E9B8DADDF46BEBC441AB50EF94347125772A5E4D43A2372A1E1576F07235E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE; JSESSIONID=0493EE8E2BD1336D8AD8236414BF781C
+D, [2016-07-12T15:29:40.350446 #8410] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:29:40.350465 #8410] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:29:40.822271 #8410]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:29:40.822342 #8410] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:29:40.822364 #8410] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:29:40.822381 #8410] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:29:40.822397 #8410] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:29:40 GMT
+D, [2016-07-12T15:29:40.822412 #8410] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:29:40.822427 #8410] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:29:40.822441 #8410] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:29:40.822456 #8410] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:29:40.822471 #8410] DEBUG -- : response-header: via => 1.1 7cc12fa294da8ba03ac48c94533c8037.cloudfront.net (CloudFront)
+D, [2016-07-12T15:29:40.822509 #8410] DEBUG -- : response-header: x-amz-cf-id => ppR3sogrlEBMlbuQbx6E_6ooW0ti_0Fy5qTf5hfbs7kJEN9kzgoKvA==
+D, [2016-07-12T15:29:40.822570 #8410] DEBUG -- : Read 2472 bytes (2472 total)
+D, [2016-07-12T15:29:40.822620 #8410] DEBUG -- : Read 1828 bytes (4300 total)
+D, [2016-07-12T15:29:40.822673 #8410] DEBUG -- : Read 1978 bytes (6278 total)
+D, [2016-07-12T15:29:40.822793 #8410] DEBUG -- : gzip response
+I, [2016-07-12T15:29:53.659391 #8431]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:29:53.659476 #8431] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:29:53.659497 #8431] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:29:53.659513 #8431] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:29:53.659528 #8431] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:29:53.659542 #8431] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:29:53.659558 #8431] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:29:53.879324 #8431]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:29:53.879418 #8431] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:29:53.879453 #8431] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:29:53.879481 #8431] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:29:53.879507 #8431] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:29:04 GMT
+D, [2016-07-12T15:29:53.879532 #8431] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:29:53.879558 #8431] DEBUG -- : response-header: set-cookie => JSESSIONID=D4AF14A75D28179779811B2E2BBC1FE6; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F53948B056CF9880DD51792654EF3F90C71B6BD4262A4DD8E6958E41038A9CEAE35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:29:53.879584 #8431] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:29:53.879615 #8431] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:29:53.879642 #8431] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:29:53.879668 #8431] DEBUG -- : response-header: via => 1.1 261e801dca9c54ff576f39f96d80ede5.cloudfront.net (CloudFront)
+D, [2016-07-12T15:29:53.879732 #8431] DEBUG -- : response-header: x-amz-cf-id => beyPeg_p8zzKq66gABzYa6YyFVPh4nWMMl2LEsUVrvW6P4N8BVJkwQ==
+D, [2016-07-12T15:29:53.879970 #8431] DEBUG -- : Read 10 bytes (10 total)
+D, [2016-07-12T15:29:53.880098 #8431] DEBUG -- : Read 2624 bytes (2634 total)
+D, [2016-07-12T15:29:53.880186 #8431] DEBUG -- : Read 539 bytes (3173 total)
+D, [2016-07-12T15:29:53.880252 #8431] DEBUG -- : Read 410 bytes (3583 total)
+D, [2016-07-12T15:29:53.882036 #8431] DEBUG -- : Read 1532 bytes (5115 total)
+D, [2016-07-12T15:29:53.967990 #8431] DEBUG -- : Read 3216 bytes (8331 total)
+D, [2016-07-12T15:29:53.968268 #8431] DEBUG -- : gzip response
+D, [2016-07-12T15:29:53.974912 #8431] DEBUG -- : saved cookie: JSESSIONID=D4AF14A75D28179779811B2E2BBC1FE6
+D, [2016-07-12T15:29:53.975060 #8431] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F53948B056CF9880DD51792654EF3F90C71B6BD4262A4DD8E6958E41038A9CEAE35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527
+I, [2016-07-12T15:29:54.490541 #8431]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:29:54.490599 #8431] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:29:54.490619 #8431] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:29:54.490635 #8431] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:29:54.490650 #8431] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:29:54.490665 #8431] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:29:54.490679 #8431] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F53948B056CF9880DD51792654EF3F90C71B6BD4262A4DD8E6958E41038A9CEAE35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527; JSESSIONID=D4AF14A75D28179779811B2E2BBC1FE6
+D, [2016-07-12T15:29:54.490694 #8431] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:29:54.490713 #8431] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:29:54.677069 #8431]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:29:54.677129 #8431] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:29:54.677149 #8431] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:29:54.677166 #8431] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:29:54.677185 #8431] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:29:05 GMT
+D, [2016-07-12T15:29:54.677201 #8431] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:29:54.677227 #8431] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:29:54.677243 #8431] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:29:54.677258 #8431] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:29:54.677294 #8431] DEBUG -- : response-header: via => 1.1 261e801dca9c54ff576f39f96d80ede5.cloudfront.net (CloudFront)
+D, [2016-07-12T15:29:54.677310 #8431] DEBUG -- : response-header: x-amz-cf-id => -VwgFyMdePuqyUnuH9XqjfcbL7-jbO82N9fRZ8fz7jMorZObErilCg==
+D, [2016-07-12T15:29:54.677381 #8431] DEBUG -- : Read 6298 bytes (6298 total)
+D, [2016-07-12T15:29:54.677490 #8431] DEBUG -- : gzip response
+I, [2016-07-12T15:33:10.437288 #8464]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:33:10.437375 #8464] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:33:10.437396 #8464] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:33:10.437414 #8464] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:33:10.437429 #8464] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:33:10.437444 #8464] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:33:10.437458 #8464] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:33:10.852843 #8464]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:33:10.852912 #8464] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:33:10.852933 #8464] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:33:10.852951 #8464] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:33:10.852967 #8464] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:10 GMT
+D, [2016-07-12T15:33:10.852983 #8464] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:33:10.852999 #8464] DEBUG -- : response-header: set-cookie => JSESSIONID=3EFD632DE586318132E2514AD6BD956B; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631A6B46B79D3F545A5866851DC89051A7A6D4BC5AC9C607FCCE93FB53F5DE3908FE0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:33:10.853015 #8464] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:33:10.853030 #8464] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:33:10.853045 #8464] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:33:10.853085 #8464] DEBUG -- : response-header: via => 1.1 591e4cd98bc438a13e141b991f9397b3.cloudfront.net (CloudFront)
+D, [2016-07-12T15:33:10.853102 #8464] DEBUG -- : response-header: x-amz-cf-id => NEQ5mK17IfbGAcMCrMGpPpD52FZinSjEn56M8axAhIqR9m77lfPY0Q==
+D, [2016-07-12T15:33:10.853217 #8464] DEBUG -- : Read 2634 bytes (2634 total)
+D, [2016-07-12T15:33:10.853273 #8464] DEBUG -- : Read 916 bytes (3550 total)
+D, [2016-07-12T15:33:10.853314 #8464] DEBUG -- : Read 726 bytes (4276 total)
+D, [2016-07-12T15:33:10.853368 #8464] DEBUG -- : Read 725 bytes (5001 total)
+D, [2016-07-12T15:33:10.854268 #8464] DEBUG -- : Read 2555 bytes (7556 total)
+D, [2016-07-12T15:33:10.936983 #8464] DEBUG -- : Read 644 bytes (8200 total)
+D, [2016-07-12T15:33:10.937300 #8464] DEBUG -- : gzip response
+D, [2016-07-12T15:33:10.945539 #8464] DEBUG -- : saved cookie: JSESSIONID=3EFD632DE586318132E2514AD6BD956B
+D, [2016-07-12T15:33:10.945707 #8464] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631A6B46B79D3F545A5866851DC89051A7A6D4BC5AC9C607FCCE93FB53F5DE3908FE0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60
+I, [2016-07-12T15:33:11.460144 #8464]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:33:11.460205 #8464] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:33:11.460224 #8464] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:33:11.460253 #8464] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:33:11.460270 #8464] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:33:11.460284 #8464] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:33:11.460299 #8464] DEBUG -- : request-header: cookie => AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631A6B46B79D3F545A5866851DC89051A7A6D4BC5AC9C607FCCE93FB53F5DE3908FE0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60; JSESSIONID=3EFD632DE586318132E2514AD6BD956B
+D, [2016-07-12T15:33:11.460314 #8464] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:33:11.460333 #8464] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:33:11.651665 #8464]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:33:11.651741 #8464] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:33:11.651763 #8464] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:33:11.651780 #8464] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:33:11.651796 #8464] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:10 GMT
+D, [2016-07-12T15:33:11.651816 #8464] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:33:11.651830 #8464] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:33:11.651844 #8464] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:33:11.651859 #8464] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:33:11.651874 #8464] DEBUG -- : response-header: via => 1.1 591e4cd98bc438a13e141b991f9397b3.cloudfront.net (CloudFront)
+D, [2016-07-12T15:33:11.651911 #8464] DEBUG -- : response-header: x-amz-cf-id => 9X75yqQOinE8hCiuOrm3UyNjzu8uqav3ZE2XE8XJNWGKneCYpbeCaA==
+D, [2016-07-12T15:33:11.651983 #8464] DEBUG -- : Read 2472 bytes (2472 total)
+D, [2016-07-12T15:33:11.652049 #8464] DEBUG -- : Read 1828 bytes (4300 total)
+D, [2016-07-12T15:33:11.652092 #8464] DEBUG -- : Read 1978 bytes (6278 total)
+D, [2016-07-12T15:33:11.652183 #8464] DEBUG -- : gzip response
+I, [2016-07-12T15:33:38.190952 #8487]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:33:38.191034 #8487] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:33:38.191085 #8487] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:33:38.191111 #8487] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:33:38.191129 #8487] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:33:38.191144 #8487] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:33:38.191158 #8487] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:33:38.900244 #8487]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:33:38.900312 #8487] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:33:38.900334 #8487] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:33:38.900351 #8487] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:33:38.900368 #8487] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:38 GMT
+D, [2016-07-12T15:33:38.900384 #8487] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:33:38.900400 #8487] DEBUG -- : response-header: set-cookie => JSESSIONID=96CBDF87068AEDD91AECF39BDD393DFC; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516314DA2505BBB884E171EABCBA47007AB212DB0A73EF16AFCB2B7DBB54AA2B02CACE0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:33:38.900416 #8487] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:33:38.900450 #8487] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:33:38.900466 #8487] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:33:38.900482 #8487] DEBUG -- : response-header: via => 1.1 835f55a08848900b948349b16ba58d9f.cloudfront.net (CloudFront)
+D, [2016-07-12T15:33:38.900525 #8487] DEBUG -- : response-header: x-amz-cf-id => Qa4BgGIjybDNB9sjaejc18SfKJXQPjV-rRWmhUtwP3ilavUHqDZJMw==
+D, [2016-07-12T15:33:38.900641 #8487] DEBUG -- : Read 10 bytes (10 total)
+D, [2016-07-12T15:33:38.900757 #8487] DEBUG -- : Read 3891 bytes (3901 total)
+D, [2016-07-12T15:33:38.900810 #8487] DEBUG -- : Read 2087 bytes (5988 total)
+D, [2016-07-12T15:33:38.900866 #8487] DEBUG -- : Read 2126 bytes (8114 total)
+D, [2016-07-12T15:33:38.900998 #8487] DEBUG -- : gzip response
+D, [2016-07-12T15:33:38.907267 #8487] DEBUG -- : saved cookie: JSESSIONID=96CBDF87068AEDD91AECF39BDD393DFC
+D, [2016-07-12T15:33:38.907395 #8487] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516314DA2505BBB884E171EABCBA47007AB212DB0A73EF16AFCB2B7DBB54AA2B02CACE0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD
+I, [2016-07-12T15:33:39.418436 #8487]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:33:39.418501 #8487] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:33:39.418522 #8487] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:33:39.418538 #8487] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:33:39.418554 #8487] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:33:39.418569 #8487] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:33:39.418605 #8487] DEBUG -- : request-header: cookie => AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516314DA2505BBB884E171EABCBA47007AB212DB0A73EF16AFCB2B7DBB54AA2B02CACE0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD; JSESSIONID=96CBDF87068AEDD91AECF39BDD393DFC
+D, [2016-07-12T15:33:39.418620 #8487] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:33:39.418641 #8487] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:33:40.131834 #8487]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:33:40.131935 #8487] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:33:40.131977 #8487] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:33:40.132030 #8487] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:33:40.132049 #8487] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:38 GMT
+D, [2016-07-12T15:33:40.132082 #8487] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:33:40.132114 #8487] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:33:40.132184 #8487] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:33:40.132228 #8487] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:33:40.132250 #8487] DEBUG -- : response-header: via => 1.1 835f55a08848900b948349b16ba58d9f.cloudfront.net (CloudFront)
+D, [2016-07-12T15:33:40.132268 #8487] DEBUG -- : response-header: x-amz-cf-id => OCZ_1NRZD2LULSchptBtvmhfWeAKtx-wvPDxufJE_QoDQtFBpvIE1g==
+D, [2016-07-12T15:33:40.132338 #8487] DEBUG -- : Read 2472 bytes (2472 total)
+D, [2016-07-12T15:33:40.132435 #8487] DEBUG -- : Read 3794 bytes (6266 total)
+D, [2016-07-12T15:33:40.132560 #8487] DEBUG -- : gzip response
+I, [2016-07-12T15:34:17.931095 #8508]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:34:17.931170 #8508] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:34:17.931190 #8508] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:34:17.931206 #8508] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:34:17.931231 #8508] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:34:17.931246 #8508] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:34:17.931259 #8508] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:34:18.196015 #8508]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:34:18.196125 #8508] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:34:18.196168 #8508] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:34:18.196203 #8508] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:34:18.196236 #8508] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:28 GMT
+D, [2016-07-12T15:34:18.196268 #8508] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:34:18.196310 #8508] DEBUG -- : response-header: set-cookie => JSESSIONID=B4A10E69649C70D3DB105B1D26CF2191; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FB9653AD00413A9E687C2DD658801AB4777730AD50B100861A50B4B56EB10982D35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:34:18.196344 #8508] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:34:18.196375 #8508] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:34:18.196454 #8508] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:34:18.196485 #8508] DEBUG -- : response-header: via => 1.1 8770293be7cd8f45ccbb40507414d516.cloudfront.net (CloudFront)
+D, [2016-07-12T15:34:18.196532 #8508] DEBUG -- : response-header: x-amz-cf-id => hoP3jeIsu7zIUaa6ofducDZsYVSrDgC_KFmU4DCkyjXfkIR-Ub9bww==
+D, [2016-07-12T15:34:18.196710 #8508] DEBUG -- : Read 2605 bytes (2605 total)
+D, [2016-07-12T15:34:18.196800 #8508] DEBUG -- : Read 539 bytes (3144 total)
+D, [2016-07-12T15:34:18.196906 #8508] DEBUG -- : Read 410 bytes (3554 total)
+D, [2016-07-12T15:34:18.196971 #8508] DEBUG -- : Read 428 bytes (3982 total)
+D, [2016-07-12T15:34:18.197073 #8508] DEBUG -- : Read 346 bytes (4328 total)
+D, [2016-07-12T15:34:18.197131 #8508] DEBUG -- : Read 378 bytes (4706 total)
+D, [2016-07-12T15:34:18.197193 #8508] DEBUG -- : Read 388 bytes (5094 total)
+D, [2016-07-12T15:34:18.278023 #8508] DEBUG -- : Read 3216 bytes (8310 total)
+D, [2016-07-12T15:34:18.278322 #8508] DEBUG -- : gzip response
+D, [2016-07-12T15:34:18.287108 #8508] DEBUG -- : saved cookie: JSESSIONID=B4A10E69649C70D3DB105B1D26CF2191
+D, [2016-07-12T15:34:18.287266 #8508] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FB9653AD00413A9E687C2DD658801AB4777730AD50B100861A50B4B56EB10982D35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527
+I, [2016-07-12T15:34:18.801505 #8508]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:34:18.801619 #8508] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:34:18.801651 #8508] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:34:18.801668 #8508] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:34:18.801683 #8508] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:34:18.801696 #8508] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:34:18.801710 #8508] DEBUG -- : request-header: cookie => AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FB9653AD00413A9E687C2DD658801AB4777730AD50B100861A50B4B56EB10982D35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527; JSESSIONID=B4A10E69649C70D3DB105B1D26CF2191
+D, [2016-07-12T15:34:18.801724 #8508] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:34:18.801742 #8508] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:34:19.001303 #8508]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:34:19.001406 #8508] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:34:19.001439 #8508] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:34:19.001468 #8508] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:34:19.001494 #8508] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:33:29 GMT
+D, [2016-07-12T15:34:19.001523 #8508] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:34:19.001549 #8508] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:34:19.001573 #8508] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:34:19.001595 #8508] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:34:19.001619 #8508] DEBUG -- : response-header: via => 1.1 8770293be7cd8f45ccbb40507414d516.cloudfront.net (CloudFront)
+D, [2016-07-12T15:34:19.001645 #8508] DEBUG -- : response-header: x-amz-cf-id => kx27h5Lkgrvb4eS7MOHWqx17g7xqgPpnzH_dfq9Z7NtAY1z-jqcWXA==
+D, [2016-07-12T15:34:19.001893 #8508] DEBUG -- : Read 10 bytes (10 total)
+D, [2016-07-12T15:34:19.002097 #8508] DEBUG -- : Read 4265 bytes (4275 total)
+D, [2016-07-12T15:34:19.002219 #8508] DEBUG -- : Read 1077 bytes (5352 total)
+D, [2016-07-12T15:34:19.002508 #8508] DEBUG -- : Read 921 bytes (6273 total)
+D, [2016-07-12T15:34:19.002712 #8508] DEBUG -- : gzip response
+I, [2016-07-12T15:35:41.929852 #8533]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:35:41.929946 #8533] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:35:41.929970 #8533] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:35:41.929987 #8533] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:35:41.930004 #8533] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:35:41.930024 #8533] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:35:41.930039 #8533] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:35:42.229811 #8533]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:35:42.229946 #8533] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:35:42.230082 #8533] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:35:42.230144 #8533] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:35:42.230210 #8533] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:35:41 GMT
+D, [2016-07-12T15:35:42.230249 #8533] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:35:42.230278 #8533] DEBUG -- : response-header: set-cookie => JSESSIONID=588DC78CE8E86A8A9FA564D5D8E14E88; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF95163132B74C89714E4EC47ABD81861E73149ABA2F5F9338F57EE37693FE51DCF76221E0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:35:42.230306 #8533] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:35:42.230331 #8533] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:35:42.230356 #8533] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:35:42.230381 #8533] DEBUG -- : response-header: via => 1.1 356f854273c0d06a872d54c9c0c99490.cloudfront.net (CloudFront)
+D, [2016-07-12T15:35:42.230446 #8533] DEBUG -- : response-header: x-amz-cf-id => Sp6N14EMmTYmUsU4LXz3Wn59yiCVPKZFQRTrNnmGA9mUf6sfAdhjOg==
+D, [2016-07-12T15:35:42.230652 #8533] DEBUG -- : Read 10 bytes (10 total)
+D, [2016-07-12T15:35:42.230840 #8533] DEBUG -- : Read 2891 bytes (2901 total)
+D, [2016-07-12T15:35:42.230919 #8533] DEBUG -- : Read 272 bytes (3173 total)
+D, [2016-07-12T15:35:42.230989 #8533] DEBUG -- : Read 1176 bytes (4349 total)
+D, [2016-07-12T15:35:42.231051 #8533] DEBUG -- : Read 378 bytes (4727 total)
+D, [2016-07-12T15:35:42.231168 #8533] DEBUG -- : Read 388 bytes (5115 total)
+D, [2016-07-12T15:35:42.312530 #8533] DEBUG -- : Read 3186 bytes (8301 total)
+D, [2016-07-12T15:35:42.312722 #8533] DEBUG -- : gzip response
+D, [2016-07-12T15:35:42.319457 #8533] DEBUG -- : saved cookie: JSESSIONID=588DC78CE8E86A8A9FA564D5D8E14E88
+D, [2016-07-12T15:35:42.319648 #8533] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF95163132B74C89714E4EC47ABD81861E73149ABA2F5F9338F57EE37693FE51DCF76221E0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60
+I, [2016-07-12T15:35:42.832705 #8533]  INFO -- : Net::HTTP::Get: /locations/institutions/tdg/
+D, [2016-07-12T15:35:42.832758 #8533] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:35:42.832776 #8533] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:35:42.832791 #8533] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:35:42.832805 #8533] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:35:42.832824 #8533] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:35:42.832838 #8533] DEBUG -- : request-header: cookie => AWSELB=EFAFE785188A308D4C859928AC96B3912CCF95163132B74C89714E4EC47ABD81861E73149ABA2F5F9338F57EE37693FE51DCF76221E0758FAB5234B813FECE3F4BCA3692744BDA1E700FDADF8693D5645FB21F3F60; JSESSIONID=588DC78CE8E86A8A9FA564D5D8E14E88
+D, [2016-07-12T15:35:42.832852 #8533] DEBUG -- : request-header: host => www.bop.gov
+D, [2016-07-12T15:35:42.832869 #8533] DEBUG -- : request-header: referer => https://www.bop.gov/locations/list.jsp
+I, [2016-07-12T15:35:43.014852 #8533]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:35:43.014926 #8533] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:35:43.014946 #8533] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:35:43.014962 #8533] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:35:43.014977 #8533] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:35:42 GMT
+D, [2016-07-12T15:35:43.014992 #8533] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:35:43.015007 #8533] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:35:43.015066 #8533] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:35:43.015104 #8533] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:35:43.015125 #8533] DEBUG -- : response-header: via => 1.1 356f854273c0d06a872d54c9c0c99490.cloudfront.net (CloudFront)
+D, [2016-07-12T15:35:43.015140 #8533] DEBUG -- : response-header: x-amz-cf-id => cCqaKVKoAm5bpUe6vxE_RL5Y2SmHIUfHCujUbmwWQ9XZwVuEo0g3Wg==
+D, [2016-07-12T15:35:43.015204 #8533] DEBUG -- : Read 2484 bytes (2484 total)
+D, [2016-07-12T15:35:43.015252 #8533] DEBUG -- : Read 1828 bytes (4312 total)
+D, [2016-07-12T15:35:43.015304 #8533] DEBUG -- : Read 1077 bytes (5389 total)
+D, [2016-07-12T15:35:43.016452 #8533] DEBUG -- : Read 921 bytes (6310 total)
+D, [2016-07-12T15:35:43.016621 #8533] DEBUG -- : gzip response
+I, [2016-07-12T15:40:03.049544 #8564]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:40:03.049620 #8564] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:40:03.049640 #8564] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:40:03.049656 #8564] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:40:03.049675 #8564] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:40:03.049689 #8564] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:40:03.049702 #8564] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:40:03.450175 #8564]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:40:03.450260 #8564] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:40:03.450284 #8564] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:40:03.450300 #8564] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:40:03.450333 #8564] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:39:06 GMT
+D, [2016-07-12T15:40:03.450348 #8564] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:40:03.450363 #8564] DEBUG -- : response-header: set-cookie => JSESSIONID=896C650037B544A9AF7293FBC73644DC; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F94BEE518EE521C7C6FD0A0DD7386BDEA23470C08FD635DE3AD9B66BAF3F11EED35E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:40:03.450377 #8564] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:40:03.450393 #8564] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:40:03.450407 #8564] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:40:03.450421 #8564] DEBUG -- : response-header: via => 1.1 5a1d0189b300bcdb45346e69c2eb1733.cloudfront.net (CloudFront)
+D, [2016-07-12T15:40:03.450435 #8564] DEBUG -- : response-header: x-amz-cf-id => UemUsnoI9hO0RVbYJjCYkKd7Vg6XIjlqAeIYbsfSqB6u-2mudnTYBQ==
+D, [2016-07-12T15:40:03.450546 #8564] DEBUG -- : Read 2634 bytes (2634 total)
+D, [2016-07-12T15:40:03.450592 #8564] DEBUG -- : Read 539 bytes (3173 total)
+D, [2016-07-12T15:40:03.450663 #8564] DEBUG -- : Read 410 bytes (3583 total)
+D, [2016-07-12T15:40:03.450700 #8564] DEBUG -- : Read 420 bytes (4003 total)
+D, [2016-07-12T15:40:03.450737 #8564] DEBUG -- : Read 346 bytes (4349 total)
+D, [2016-07-12T15:40:03.450772 #8564] DEBUG -- : Read 766 bytes (5115 total)
+D, [2016-07-12T15:40:03.536519 #8564] DEBUG -- : Read 3216 bytes (8331 total)
+D, [2016-07-12T15:40:03.536702 #8564] DEBUG -- : gzip response
+D, [2016-07-12T15:40:03.543736 #8564] DEBUG -- : saved cookie: JSESSIONID=896C650037B544A9AF7293FBC73644DC
+D, [2016-07-12T15:40:03.543928 #8564] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F94BEE518EE521C7C6FD0A0DD7386BDEA23470C08FD635DE3AD9B66BAF3F11EED35E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3
+I, [2016-07-12T15:40:54.255467 #8585]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:40:54.255544 #8585] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:40:54.255564 #8585] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:40:54.255580 #8585] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:40:54.255595 #8585] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:40:54.255609 #8585] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:40:54.255626 #8585] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:40:54.473362 #8585]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:40:54.473482 #8585] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:40:54.473509 #8585] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:40:54.473556 #8585] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:40:54.473585 #8585] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:39:57 GMT
+D, [2016-07-12T15:40:54.473610 #8585] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:40:54.473637 #8585] DEBUG -- : response-header: set-cookie => JSESSIONID=2471B80EAC7897EB19937DCEB298842C; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F317F9B786057D4A6F55AF9A4D67F6B06C4AFA496D36DFEA5BC8696D3EA81655735E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:40:54.473677 #8585] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:40:54.474498 #8585] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:40:54.474548 #8585] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:40:54.474569 #8585] DEBUG -- : response-header: via => 1.1 f83a7605cde7ddbe4c1e27d757caa746.cloudfront.net (CloudFront)
+D, [2016-07-12T15:40:54.474586 #8585] DEBUG -- : response-header: x-amz-cf-id => UIkXypFl6gGwdHgbuSOX8dyvRW1FV9dtNGTHuQtOSRd7gEriO8R1Qw==
+D, [2016-07-12T15:40:54.474725 #8585] DEBUG -- : Read 3144 bytes (3144 total)
+D, [2016-07-12T15:40:54.474790 #8585] DEBUG -- : Read 410 bytes (3554 total)
+D, [2016-07-12T15:40:54.474852 #8585] DEBUG -- : Read 1532 bytes (5086 total)
+D, [2016-07-12T15:40:54.475139 #8585] DEBUG -- : Read 1071 bytes (6157 total)
+D, [2016-07-12T15:40:54.552246 #8585] DEBUG -- : Read 2145 bytes (8302 total)
+D, [2016-07-12T15:40:54.552428 #8585] DEBUG -- : gzip response
+D, [2016-07-12T15:40:54.559074 #8585] DEBUG -- : saved cookie: JSESSIONID=2471B80EAC7897EB19937DCEB298842C
+D, [2016-07-12T15:40:54.559217 #8585] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F317F9B786057D4A6F55AF9A4D67F6B06C4AFA496D36DFEA5BC8696D3EA81655735E2D78F9C42C10C1B71719F073514AAF74B433F43C2D92A913947D8B106A4F3
+I, [2016-07-12T15:41:14.301480 #8606]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:41:14.301555 #8606] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:41:14.301575 #8606] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:41:14.301591 #8606] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:41:14.301605 #8606] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:41:14.301622 #8606] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:41:14.301635 #8606] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:41:15.399170 #8606]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:41:15.399265 #8606] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:41:15.399301 #8606] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:41:15.399370 #8606] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:41:15.399398 #8606] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:40:18 GMT
+D, [2016-07-12T15:41:15.399432 #8606] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:41:15.399460 #8606] DEBUG -- : response-header: set-cookie => JSESSIONID=8094816580DAF4C49EC86DB2694C9DF2; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F7DE18444C7525402937F52FF5E36B93868E161B4B93B2A2A5EEC0343C85DF30AB84DDC19206E993F647A2CD3C2465591AB97D61D589A243FAA2FD580870AF648;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:41:15.399486 #8606] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:41:15.399510 #8606] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:41:15.399534 #8606] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:41:15.399558 #8606] DEBUG -- : response-header: via => 1.1 0d2cfbcda010df0612b135f7f52f2cc8.cloudfront.net (CloudFront)
+D, [2016-07-12T15:41:15.399583 #8606] DEBUG -- : response-header: x-amz-cf-id => Pt06oLmPcG89obtM4_86etT18aWxTnW4NtZ3NxHsvWngDgIIRcwB3A==
+D, [2016-07-12T15:41:15.399758 #8606] DEBUG -- : Read 2605 bytes (2605 total)
+D, [2016-07-12T15:41:15.399842 #8606] DEBUG -- : Read 539 bytes (3144 total)
+D, [2016-07-12T15:41:15.399960 #8606] DEBUG -- : Read 410 bytes (3554 total)
+D, [2016-07-12T15:41:15.400031 #8606] DEBUG -- : Read 726 bytes (4280 total)
+D, [2016-07-12T15:41:15.400090 #8606] DEBUG -- : Read 8 bytes (4288 total)
+D, [2016-07-12T15:41:15.400149 #8606] DEBUG -- : Read 378 bytes (4666 total)
+D, [2016-07-12T15:41:15.400209 #8606] DEBUG -- : Read 388 bytes (5054 total)
+D, [2016-07-12T15:41:15.400320 #8606] DEBUG -- : Read 3186 bytes (8240 total)
+D, [2016-07-12T15:41:15.400461 #8606] DEBUG -- : gzip response
+D, [2016-07-12T15:41:15.407214 #8606] DEBUG -- : saved cookie: JSESSIONID=8094816580DAF4C49EC86DB2694C9DF2
+D, [2016-07-12T15:41:15.407391 #8606] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F7DE18444C7525402937F52FF5E36B93868E161B4B93B2A2A5EEC0343C85DF30AB84DDC19206E993F647A2CD3C2465591AB97D61D589A243FAA2FD580870AF648
+I, [2016-07-12T15:47:32.728832 #8688]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:47:32.728905 #8688] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:47:32.728926 #8688] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:47:32.728942 #8688] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:47:32.728956 #8688] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:47:32.728970 #8688] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:47:32.728983 #8688] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:47:33.384429 #8688]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:47:33.384500 #8688] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:47:33.384522 #8688] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:47:33.384538 #8688] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:47:33.384576 #8688] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:47:32 GMT
+D, [2016-07-12T15:47:33.384643 #8688] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:47:33.384665 #8688] DEBUG -- : response-header: set-cookie => JSESSIONID=7E7FBC7391200685ADB9228E1978C4C1; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516312AB74D90D01EBC4CB00DE7606A8528657A759DF48E2C53CBAFA2678B9989A39BE0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:47:33.384681 #8688] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:47:33.384696 #8688] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:47:33.384711 #8688] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:47:33.384727 #8688] DEBUG -- : response-header: via => 1.1 cbd0b0c202bff148380d15c30d5254c8.cloudfront.net (CloudFront)
+D, [2016-07-12T15:47:33.384742 #8688] DEBUG -- : response-header: x-amz-cf-id => FDAvirq-UQqkxmR4mrXPlZ9caFKL9P_wfFlAiDL-pC9FPdfPI1HDIA==
+D, [2016-07-12T15:47:33.384858 #8688] DEBUG -- : Read 10 bytes (10 total)
+D, [2016-07-12T15:47:33.384911 #8688] DEBUG -- : Read 2344 bytes (2354 total)
+D, [2016-07-12T15:47:33.384979 #8688] DEBUG -- : Read 792 bytes (3146 total)
+D, [2016-07-12T15:47:33.385028 #8688] DEBUG -- : Read 410 bytes (3556 total)
+D, [2016-07-12T15:47:33.385895 #8688] DEBUG -- : Read 420 bytes (3976 total)
+D, [2016-07-12T15:47:33.385986 #8688] DEBUG -- : Read 684 bytes (4660 total)
+D, [2016-07-12T15:47:33.386030 #8688] DEBUG -- : Read 388 bytes (5048 total)
+D, [2016-07-12T15:47:33.387311 #8688] DEBUG -- : Read 1071 bytes (6119 total)
+D, [2016-07-12T15:47:33.464768 #8688] DEBUG -- : Read 2124 bytes (8243 total)
+D, [2016-07-12T15:47:33.465299 #8688] DEBUG -- : gzip response
+D, [2016-07-12T15:47:33.473090 #8688] DEBUG -- : saved cookie: JSESSIONID=7E7FBC7391200685ADB9228E1978C4C1
+D, [2016-07-12T15:47:33.473269 #8688] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF9516312AB74D90D01EBC4CB00DE7606A8528657A759DF48E2C53CBAFA2678B9989A39BE0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD
+I, [2016-07-12T15:47:42.326409 #8709]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:47:42.326491 #8709] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:47:42.326511 #8709] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:47:42.326532 #8709] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:47:42.326561 #8709] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:47:42.326633 #8709] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:47:42.326649 #8709] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:47:42.530543 #8709]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:47:42.530639 #8709] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:47:42.530673 #8709] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:47:42.530741 #8709] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:47:42.530768 #8709] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:47:41 GMT
+D, [2016-07-12T15:47:42.530794 #8709] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:47:42.530820 #8709] DEBUG -- : response-header: set-cookie => JSESSIONID=AB42F0C1E16BBBCE29D56BF387180478; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FE90DA321E41DE1C22BB83F20AB0EB5037750A4D8E750776DF08155414145462B35E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:47:42.530845 #8709] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:47:42.530869 #8709] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:47:42.530893 #8709] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:47:42.530921 #8709] DEBUG -- : response-header: via => 1.1 7784648d4cd8093712670c85a22e6c54.cloudfront.net (CloudFront)
+D, [2016-07-12T15:47:42.530948 #8709] DEBUG -- : response-header: x-amz-cf-id => ITtgXLHtvEjpCIbVnvkUic0lxB5H-T_ZLDIoXFedhPxnhBTKUR7ZqQ==
+D, [2016-07-12T15:47:42.531136 #8709] DEBUG -- : Read 6115 bytes (6115 total)
+D, [2016-07-12T15:47:42.610882 #8709] DEBUG -- : Read 2130 bytes (8245 total)
+D, [2016-07-12T15:47:42.611133 #8709] DEBUG -- : gzip response
+D, [2016-07-12T15:47:42.619677 #8709] DEBUG -- : saved cookie: JSESSIONID=AB42F0C1E16BBBCE29D56BF387180478
+D, [2016-07-12T15:47:42.620084 #8709] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6FE90DA321E41DE1C22BB83F20AB0EB5037750A4D8E750776DF08155414145462B35E2D78F9C42C10C1B71719F073514AADEA851A69F1BFDF7FB409880E0AD46CE
+I, [2016-07-12T15:50:39.766918 #8737]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:50:39.766992 #8737] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:50:39.767013 #8737] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:50:39.767032 #8737] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:50:39.767047 #8737] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:50:39.767061 #8737] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:50:39.767074 #8737] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:50:40.031695 #8737]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:50:40.031769 #8737] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:50:40.031791 #8737] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:50:40.031829 #8737] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:50:40.031846 #8737] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:49:50 GMT
+D, [2016-07-12T15:50:40.031861 #8737] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:50:40.031877 #8737] DEBUG -- : response-header: set-cookie => JSESSIONID=C3C1EE3E5EF77E56DE955DFEB563B19B; Path=/; Secure; HttpOnly, AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F858D3144A799D28A320416391893F2D779F1E964C03E60502214BFA400FB587F35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:50:40.031906 #8737] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:50:40.031921 #8737] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:50:40.031936 #8737] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:50:40.031951 #8737] DEBUG -- : response-header: via => 1.1 5ec64d9502b4a51a283c9c8c16414219.cloudfront.net (CloudFront)
+D, [2016-07-12T15:50:40.031967 #8737] DEBUG -- : response-header: x-amz-cf-id => -BcBcZ3fUevbx95WauF_cAYrkzNTsfnujvXa4392UiKMdysSlbmTGA==
+D, [2016-07-12T15:50:40.032095 #8737] DEBUG -- : Read 2605 bytes (2605 total)
+D, [2016-07-12T15:50:40.032146 #8737] DEBUG -- : Read 539 bytes (3144 total)
+D, [2016-07-12T15:50:40.032208 #8737] DEBUG -- : Read 410 bytes (3554 total)
+D, [2016-07-12T15:50:40.032245 #8737] DEBUG -- : Read 420 bytes (3974 total)
+D, [2016-07-12T15:50:40.032282 #8737] DEBUG -- : Read 346 bytes (4320 total)
+D, [2016-07-12T15:50:40.032320 #8737] DEBUG -- : Read 378 bytes (4698 total)
+D, [2016-07-12T15:50:40.032356 #8737] DEBUG -- : Read 388 bytes (5086 total)
+D, [2016-07-12T15:50:40.033247 #8737] DEBUG -- : Read 1071 bytes (6157 total)
+D, [2016-07-12T15:50:40.119296 #8737] DEBUG -- : Read 2145 bytes (8302 total)
+D, [2016-07-12T15:50:40.119463 #8737] DEBUG -- : gzip response
+D, [2016-07-12T15:50:40.126279 #8737] DEBUG -- : saved cookie: JSESSIONID=C3C1EE3E5EF77E56DE955DFEB563B19B
+D, [2016-07-12T15:50:40.126442 #8737] DEBUG -- : saved cookie: AWSELB=E1ADA7771A127E2586E2A5C81A1989DFB409577E6F858D3144A799D28A320416391893F2D779F1E964C03E60502214BFA400FB587F35E2D78F9C42C10C1B71719F073514AA8D6ECA1AC6ED20D1B4204F54D2E97527
+I, [2016-07-12T15:54:11.055480 #8769]  INFO -- : Net::HTTP::Get: /locations/list.jsp
+D, [2016-07-12T15:54:11.055575 #8769] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2016-07-12T15:54:11.055602 #8769] DEBUG -- : request-header: accept => */*
+D, [2016-07-12T15:54:11.055622 #8769] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2016-07-12T15:54:11.055645 #8769] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2016-07-12T15:54:11.055661 #8769] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2016-07-12T15:54:11.055678 #8769] DEBUG -- : request-header: host => www.bop.gov
+I, [2016-07-12T15:54:11.660191 #8769]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2016-07-12T15:54:11.660255 #8769] DEBUG -- : response-header: content-type => text/html;charset=ISO-8859-1
+D, [2016-07-12T15:54:11.660277 #8769] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2016-07-12T15:54:11.660294 #8769] DEBUG -- : response-header: connection => keep-alive
+D, [2016-07-12T15:54:11.660331 #8769] DEBUG -- : response-header: date => Tue, 12 Jul 2016 19:54:11 GMT
+D, [2016-07-12T15:54:11.660347 #8769] DEBUG -- : response-header: server => Apache
+D, [2016-07-12T15:54:11.660364 #8769] DEBUG -- : response-header: set-cookie => JSESSIONID=26D40FB683831CC280D13E9A86E7C9F9; Path=/; Secure; HttpOnly, AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631C3963DAB9A2390A3E939C29FBA4516468F6A7FCE89E2DF1BD4D2767916382C85E0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD;PATH=/;SECURE;HTTPONLY
+D, [2016-07-12T15:54:11.660380 #8769] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2016-07-12T15:54:11.660395 #8769] DEBUG -- : response-header: content-encoding => gzip
+D, [2016-07-12T15:54:11.660410 #8769] DEBUG -- : response-header: x-cache => Miss from cloudfront
+D, [2016-07-12T15:54:11.660426 #8769] DEBUG -- : response-header: via => 1.1 9aaf336897fdd8a2dfd1b375c61d8b0b.cloudfront.net (CloudFront)
+D, [2016-07-12T15:54:11.660443 #8769] DEBUG -- : response-header: x-amz-cf-id => sKAYoNawqkh3wX80EKrVkpFWgbClZFUKXRaRzpdXff1cB-OUleUMvg==
+D, [2016-07-12T15:54:11.660593 #8769] DEBUG -- : Read 2605 bytes (2605 total)
+D, [2016-07-12T15:54:11.660651 #8769] DEBUG -- : Read 546 bytes (3151 total)
+D, [2016-07-12T15:54:11.660720 #8769] DEBUG -- : Read 418 bytes (3569 total)
+D, [2016-07-12T15:54:11.660756 #8769] DEBUG -- : Read 420 bytes (3989 total)
+D, [2016-07-12T15:54:11.660790 #8769] DEBUG -- : Read 354 bytes (4343 total)
+D, [2016-07-12T15:54:11.745808 #8769] DEBUG -- : Read 3971 bytes (8314 total)
+D, [2016-07-12T15:54:11.745993 #8769] DEBUG -- : gzip response
+D, [2016-07-12T15:54:11.752831 #8769] DEBUG -- : saved cookie: JSESSIONID=26D40FB683831CC280D13E9A86E7C9F9
+D, [2016-07-12T15:54:11.752975 #8769] DEBUG -- : saved cookie: AWSELB=EFAFE785188A308D4C859928AC96B3912CCF951631C3963DAB9A2390A3E939C29FBA4516468F6A7FCE89E2DF1BD4D2767916382C85E0758FAB5234B813FECE3F4BCA36927481F2EE66D0CE0C3956962210932E6BBD

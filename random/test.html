@@ -1,0 +1,552 @@
+
+<script>
+	var mgVirtual="/mapserver15";
+	var mgReportFolder="/Bullock/CamaTemplates/Reports/";
+	var mgReportName="SearchResults.cfm";
+	var mgFolderName="BULLOCK";
+	var mgCountyLat="32.1462";
+	var mgCountyLog="-85.7134";
+	var baseLayersArray = [];
+	
+		baseLayersArray[0]="Group,Aerial Photos,Aerials";
+	
+</script>
+
+<script language=javascript src="/jsweb15/mgFunctions.js"></script>
+<script language=javascript src="/jsweb15/mgReports.js"></script>
+
+
+
+<HTML>
+<HEAD><TITLE>Bullock Public GIS </TITLE>
+
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="searchstyle.css" type="text/css">
+
+<script language="JavaScript">
+top.top.parcels_list="0103070000001000,0103080000001000,0104170000001000,0104170000001001,0104170000001002,0104170000002000,0104170000002001,0104170000002002,0104180000001000,0104180000002000";
+
+function openDetail()
+	{
+		
+		var getTheDetail = "Detail.cfm?Master__Master_key=09 01 03 07 0 000 001.000";
+		window.open(getTheDetail,'searchFrame');
+		
+	}
+
+function sortOrderSubmit(userOrderField)
+	{
+		document.Form1.OrderField.value = userOrderField;
+		document.Form1.submit();
+	}
+
+function openExcel()
+	{
+		
+		var getExcel = "Search_Excel.cfm";
+		window.open(getExcel,'_blank');
+		
+	}
+
+function openMailing()
+	{
+		
+		var getExcel = "Mailing_Excel.cfm?cfid=1491616&cftoken=76191621";
+		window.open(getExcel,'_blank');
+		
+	}
+
+</script>	
+
+</HEAD>
+
+<BODY bgcolor="#FCF9EF" >
+
+
+
+<FORM NAME="Form1" Method="POST" ACTION="SearchResults.cfm">	
+	<table border="1" cellspacing="0" cellpadding="3" bordercolor="#99999999" align="Left">
+<tr> 
+  	<td colspan="5" nowrap class="rowHeader">BullockAL - 2015 - <b>PARCEL SUMMARY</b> - 10 Records
+		&nbsp;&nbsp;<b><font color="Red">Capped at     10!</font></b>
+	</td>
+	<td colspan="2" class="rowHeader"><div align="center">Sorted: Ascending</div></td>
+	<td colspan="12" align="Center" class="rowHeader" nowrap>&nbsp;&nbsp;&nbsp;&nbsp;
+
+	
+   		<A HREF="javascript:window.print();">Print</a>&nbsp;&middot;&nbsp;
+		<a href="javascript:history.back()">Back</a>&nbsp;&middot;&nbsp;
+        <a href="javascript:top.top.mapIt();">Map It</a>&nbsp;&middot;&nbsp;
+	    <a href="javascript:top.top.clearParcels();">Clear</a>&nbsp;&middot;&nbsp;
+		<a href="javascript:openExcel();">To Excel</a>&nbsp;&middot;&nbsp;
+		<a href="javascript:openMailing();">To Mailing</a>&nbsp;&middot;&nbsp;
+	
+		<b>Parcel</b>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+		<a href="BuildingResults.cfm?FromResults=Yes&Obj_Keys=1">To Bldg</a>
+		
+		
+	</td>  
+	<td colspan="1" class="rowHeader"></td> <td colspan="1" class="rowHeader"></td> 
+</tr> 
+
+<tr> 
+   	<td colspan="1"><b>Row</b></td> 
+  	<td colspan="1"><b>Info</b></td>
+    <td width="2" ><a href="JavaScript:sortOrderSubmit('ADDR.ACCOUNT_NO')"><b>Account</b></a></td>
+    <td><a href="JavaScript:sortOrderSubmit('parcel.Parcel_Key')"><font color="Green"><b>Parcel Number</b></font></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('ADDR.name')"><b>Owner's Name</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Section')"><b>S/T/R</b></a></td>		
+	<td><a href="JavaScript:sortOrderSubmit('Parcel.P_HOUSE_NUM')"><b>Parcel Address</b></a></td>	
+	
+	<td><a href="JavaScript:sortOrderSubmit('ADDR.address')"><b>Owner's Address</b></a></td>
+	
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Nbhd')"><b>Nbhd</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Tax_Dist')"><b>TaxDist</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Land_Appr')"><b>Land Val</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Imp_Appr')"><b>Imp Val</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.fmv')"><b>TMkt Val</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.total_acre')"><b>Acres</b></a></td>
+ 	<td><a href="JavaScript:sortOrderSubmit('parcel.D_Book')"><b>DBook</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.D_BPage')"><b>DPage</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.D_Date')"><b>DDate</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Use_Code')"><b>Use</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('addr.Exempt_Code')"><b>Exmt</b></a></td>
+	<td><a href="JavaScript:sortOrderSubmit('parcel.Tax_DueAmt')"><b>YrlyTax</b></a></td>
+ 	
+	<td><a href="JavaScript:sortOrderSubmit('parcel.SubName')"><b>Subdivision</b></a></td>
+	
+</tr> 
+
+	
+	
+    <tr bgcolor="CFE6E7"> 
+      <td>
+        <div align="center"><b>1</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0103070000001000','09 01 03 07 0 000 001.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2003%2007%200%20000%20001%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2003%2007%200%20000%20001%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">60081<br></td>
+         <td nowrap>09 01 03 07 0 000 001.000 0<br></td>
+         <td align="left" nowrap>BROWN-MAXWELL INVESTMENTS LLC </td>
+		 <td align="right" nowrap>07 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>1417 CHARLETON DR </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>   $844,050</td>
+ 		 <td align="right" nowrap>    $48,650</td>
+         <td align="right" nowrap>   $892,700</td>	
+	 	 <td align="right" nowrap>385</td>		 
+		 <td align="right" nowrap>0000-1</td>	
+ 		 <td align="right" nowrap>000229</td>	
+  		 <td align="right" nowrap>06/26/1996</td>	
+		 <td align="Center" nowrap>0111</td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$1271.85 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="FCF9EF"> 
+      <td>
+        <div align="center"><b>2</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0103080000001000','09 01 03 08 0 000 001.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2003%2008%200%20000%20001%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2003%2008%200%20000%20001%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">6725<br></td>
+         <td nowrap>09 01 03 08 0 000 001.000 0<br></td>
+         <td align="left" nowrap>BROWN-MAXWELL INVESTMENTS LTD </td>
+		 <td align="right" nowrap>08 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>1417 CHARLETON DR </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>    $33,000</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>    $33,000</td>	
+	 	 <td align="right" nowrap>22</td>		 
+		 <td align="right" nowrap>00 V-1</td>	
+ 		 <td align="right" nowrap>000204</td>	
+  		 <td align="right" nowrap>01/01/1900</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$39.61 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="CFE6E7"> 
+      <td>
+        <div align="center"><b>3</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000001000','09 01 04 17 0 000 001.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">6725<br></td>
+         <td nowrap>09 01 04 17 0 000 001.000 0<br></td>
+         <td align="left" nowrap>BROWN-MAXWELL INVESTMENTS LTD </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>1417 CHARLETON DR </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>   $111,920</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>   $111,920</td>	
+	 	 <td align="right" nowrap>74.61</td>		 
+		 <td align="right" nowrap>00 W-1</td>	
+ 		 <td align="right" nowrap>000204</td>	
+  		 <td align="right" nowrap>02/09/1999</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$134.48 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="FCF9EF"> 
+      <td>
+        <div align="center"><b>4</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000001001','09 01 04 17 0 000 001.001')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E001"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E001" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">142170<br></td>
+         <td nowrap>09 01 04 17 0 000 001.001 0<br></td>
+         <td align="left" nowrap>GRAVES RENEE T. </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>4334 MARDEN DRIVE </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>    $19,500</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>    $19,500</td>	
+	 	 <td align="right" nowrap>13</td>		 
+		 <td align="right" nowrap>00CC-2</td>	
+ 		 <td align="right" nowrap>000200</td>	
+  		 <td align="right" nowrap>04/28/2008</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$86.56 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="CFE6E7"> 
+      <td>
+        <div align="center"><b>5</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000001002','09 01 04 17 0 000 001.002')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E002"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20001%2E002" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">122550<br></td>
+         <td nowrap>09 01 04 17 0 000 001.002 0<br></td>
+         <td align="left" nowrap>LONG LEANNE JOYCE </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>2700 CONNECTICUT AVE NORTHWEST </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>     $3,000</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>     $3,000</td>	
+	 	 <td align="right" nowrap>2</td>		 
+		 <td align="right" nowrap>00MM-1</td>	
+ 		 <td align="right" nowrap>000388</td>	
+  		 <td align="right" nowrap>06/04/2004</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$3.68 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="FCF9EF"> 
+      <td>
+        <div align="center"><b>6</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000002000','09 01 04 17 0 000 002.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">10031<br></td>
+         <td nowrap>09 01 04 17 0 000 002.000 0<br></td>
+         <td align="left" nowrap>GRAVES DAVID B. </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>562 WEST CLUB BLVD </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>    $28,500</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>    $28,500</td>	
+	 	 <td align="right" nowrap>19</td>		 
+		 <td align="right" nowrap>000RRR</td>	
+ 		 <td align="right" nowrap>000453</td>	
+  		 <td align="right" nowrap>04/01/1981</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$34.09 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="CFE6E7"> 
+      <td>
+        <div align="center"><b>7</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000002001','09 01 04 17 0 000 002.001')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E001"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E001" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">10033<br></td>
+         <td nowrap>09 01 04 17 0 000 002.001 0<br></td>
+         <td align="left" nowrap>BARNETT HENRY H. JR. </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>74 BARNETT STREET </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>   $171,600</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>   $171,600</td>	
+	 	 <td align="right" nowrap>80</td>		 
+		 <td align="right" nowrap>000QQQ</td>	
+ 		 <td align="right" nowrap>000945</td>	
+  		 <td align="right" nowrap>08/25/1980</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$171.85 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="FCF9EF"> 
+      <td>
+        <div align="center"><b>8</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104170000002002','09 01 04 17 0 000 002.002')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E002"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2017%200%20000%20002%2E002" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">10035<br></td>
+         <td nowrap>09 01 04 17 0 000 002.002 0<br></td>
+         <td align="left" nowrap>GRAVES JACK LEE </td>
+		 <td align="right" nowrap>17 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>190 PAWNEE DR </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>    $24,000</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>    $24,000</td>	
+	 	 <td align="right" nowrap>16</td>		 
+		 <td align="right" nowrap>000RRR</td>	
+ 		 <td align="right" nowrap>000450</td>	
+  		 <td align="right" nowrap>04/01/1981</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$28.57 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="CFE6E7"> 
+      <td>
+        <div align="center"><b>9</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104180000001000','09 01 04 18 0 000 001.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2018%200%20000%20001%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2018%200%20000%20001%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">6725<br></td>
+         <td nowrap>09 01 04 18 0 000 001.000 0<br></td>
+         <td align="left" nowrap>BROWN-MAXWELL INVESTMENTS LTD </td>
+		 <td align="right" nowrap>18 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>1417 CHARLETON DR </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>   $839,700</td>
+ 		 <td align="right" nowrap>        $0</td>
+         <td align="right" nowrap>   $839,700</td>	
+	 	 <td align="right" nowrap>320</td>		 
+		 <td align="right" nowrap>00EE-1</td>	
+ 		 <td align="right" nowrap>000010</td>	
+  		 <td align="right" nowrap>09/25/2001</td>	
+		 <td align="Center" nowrap>    </td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$583.77 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+  
+	
+    <tr bgcolor="FCF9EF"> 
+      <td>
+        <div align="center"><b>10</b> </div>
+      </td>
+      <td nowrap> 
+        <div align="center">
+	  	 
+        	<a href="javascript:top.top.zoomTarget('0104180000002000','09 01 04 18 0 000 002.000')"><img src="../images/ZoomParcel.gif" width="15" height="13" border="0" alt="zoom to this parcel"></a>  
+  		
+          	&nbsp;<a href="Detail.CFM?Master__Master_key=09%2001%2004%2018%200%20000%20002%2E000"  target="searchFrame" ><img src="../images/info.gif" border="0" alt="get details on this parcel"></a> 
+   		    &nbsp;<a href="prc_Main.CFM?Master__Master_key=09%2001%2004%2018%200%20000%20002%2E000" target="_blank"><img src="../Images/detail.gif" border="0" alt="Open property record card"></a>
+		
+	  </td>
+	   
+         <td align="right">10048<br></td>
+         <td nowrap>09 01 04 18 0 000 002.000 0<br></td>
+         <td align="left" nowrap>BARNETT ALLISON V IV & OTHERS </td>
+		 <td align="right" nowrap>18 15N 22E</td>
+		 <td align="center"><font color="Gray">---</font></td>
+		 <td align="right" nowrap>765 CO RD 88 </td>	
+		 <td align="right" nowrap>0000BCRM</td>	
+		 <td align="right" nowrap>11-COUNTY1             </td>	
+		 <td align="right" nowrap>   $269,850</td>
+ 		 <td align="right" nowrap>   $117,910</td>
+         <td align="right" nowrap>   $387,760</td>	
+	 	 <td align="right" nowrap>119</td>		 
+		 <td align="right" nowrap>000WWW</td>	
+ 		 <td align="right" nowrap>000706</td>	
+  		 <td align="right" nowrap>01/29/1986</td>	
+		 <td align="Center" nowrap>0111</td>		 
+		 <td align="Center" nowrap>0</td>		 
+  		 <td align="right" nowrap>$1326.47 for 2015</td>	   
+		 <td align="left" nowrap>N/A                           </td>	   
+    	 
+    </tr>
+	
+   
+</table>
+	
+
+	<input type="hidden" name="OrderField" value="parcel.Parcel_key">
+	<input type="hidden" name="OrderFieldPrevious" value="parcel.parcel_key">
+	<input type="hidden" name="Order" value="">
+	<input type="hidden" name="MaxRecords" value="10">
+	<input type="Hidden" name="OBJ_KEYS" value="">
+	<input type="Hidden" name="Master__Map1" value="">
+	<input type="Hidden" name="Master__Map2" value="">
+	<input type="Hidden" name="Master__Map3" value="">
+	<input type="Hidden" name="Master__Map4" value="">
+	<input type="Hidden" name="Master__Map5" value="">
+	<input type="Hidden" name="Master__Map6" value="">
+	<input type="Hidden" name="Master__Map7" value="">
+	<input type="Hidden" name="Master__Map8" value="">
+	<input type="Hidden" name="Master__Map9" value="">
+	<input type="Hidden" name="Master__Map10" value="">
+	<input type="Hidden" name="Master__Map11" value="">
+	<input type="Hidden" name="Master__Map12" value="">
+	<input type="Hidden" name="Master__Map13" value="">
+	<input type="Hidden" name="Master__Map14" value="">
+	<input type="Hidden" name="Master__OWNER" value="">
+	<input type="Hidden" name="Parcel_Name_Operator" value="BEGINS_WITH">
+	<input type="Hidden" name="Master__BillZip" value="">
+	<input type="Hidden" name="Master__Account" value="">
+	<input type="Hidden" name="Master_Street_No" value="">
+	<input type="Hidden" name="Master_Street_Name" value="">
+	<input type="Hidden" name="Master__Great_Acres" value="">
+	<input type="Hidden" name="Master__Less_Acres" value="">
+	<input type="Hidden" name="Master__Great_Apr_Value" value="">
+	<input type="Hidden" name="Master__Less_Apr_Value" value="">
+	<input type="Hidden" name="Master__SubName" value="">
+	<input type="Hidden" name="Parcel_Subd_text" value="">
+	<input type="Hidden" name="Parcel_Subd_Operator" value="BEGINS_WITH">
+	<input type="Hidden" name="Master__District" value="11">
+	<input type="Hidden" name="Master__FireCode" value="">
+	<input type="Hidden" name="Master__UseCode" value="">
+	<input type="Hidden" name="Master__ExmptCode" value="">
+	<input type="Hidden" name="Master__Nbrhood" value="">
+	<input type="Hidden" name="Master__Deed_Book" value="">
+	<input type="Hidden" name="Master__Deed_Page" value="">
+	<input type="Hidden" name="Master__DDate_Great" value="">
+	<input type="Hidden" name="Master__DDate_Less" value="">
+	<input type="Hidden" name="Master__Section" value="">
+	<input type="Hidden" name="Master__Township" value="">
+	<input type="Hidden" name="Master__Range" value="">
+	
+
+</form>	
+</BODY>
+</HTML>
